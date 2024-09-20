@@ -48,9 +48,10 @@ function M.get(p)
 		DiagnosticUnderlineHint = { fg = p.cyan, underline = true },
 
 		-- Neovim's built-in language server client
-		LspReferenceWrite = { fg = p.purple, underline = true },
-		LspReferenceText = { fg = p.purple, underline = true },
-		LspReferenceRead = { fg = p.purple, underline = true },
+		-- 鼠标悬停单词下划线
+		LspReferenceWrite = { fg = p.purple, underline = false },
+		LspReferenceText = { fg = p.purple, underline = false },
+		LspReferenceRead = { fg = p.purple, underline = false },
 		LspSignatureActiveParameter = { fg = p.yellow, bold = true },
 	}
 end

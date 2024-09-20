@@ -14,7 +14,7 @@ function M.get(p, opts)
 		CmpItemKindField = { fg = p.magenta },
 		CmpItemKindConstant = { fg = p.orange },
 		CmpItemKindMethod = { fg = p.cyan },
-		CmpBorder = { fg = p.border_highlight },
+		CmpBorder = { fg = p.red },
 	}
 end
 

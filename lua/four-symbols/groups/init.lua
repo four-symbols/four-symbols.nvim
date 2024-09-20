@@ -20,6 +20,7 @@ local Notify = require "four-symbols.groups.integrations.notify"
 local RainbowDelimiters = require "four-symbols.groups.integrations.rainbow_delimiters"
 local Telescope = require "four-symbols.groups.integrations.telescope"
 local TreeSitter = require "four-symbols.groups.integrations.treesitter"
+local Trouble = require "four-symbols.groups.integrations.trouble"
 
 local M = {}
 
@@ -51,6 +52,7 @@ function M.setup(colors, opts)
 		rainbow_delimiters = RainbowDelimiters.get(colors),
 		telescope = Telescope.get(colors),
 		treesitter = TreeSitter.get(colors, opts),
+		trouble = Trouble.get(colors),
 	}
 
 	local result = {}
