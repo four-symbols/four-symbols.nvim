@@ -34,6 +34,11 @@ function M.get(p, opts)
 			fg = p.fg,
 			bg = opts.transparent and p.none or p.bg,
 		},
+		-- NormalNC = {
+		-- 	fg = p.fg,
+		-- 	bg = opts.theme == "white-tiger" and p.bg
+		-- 		or (opts.transparent and p.none or opts.dim_inactive and p.bg_dark or p.bg),
+		-- }, -- 非当前窗口的普通文本
 		NormalNC = { fg = p.fg, bg = opts.transparent and p.none or opts.dim_inactive and p.bg_dark or p.bg }, -- 非当前窗口的普通文本
 		NormalSB = { fg = p.fg, bg = p.bg_dark }, -- 侧栏中的普通文本
 		NormalFloat = { fg = p.fg, bg = p.bg_dark }, -- 浮动窗口中的普通文本
@@ -59,8 +64,8 @@ function M.get(p, opts)
 		TabLineSel = { fg = p.fg, bg = p.bg }, -- 标签页行，活动标签页标签
 		Terminal = { fg = p.fg, bg = p.bg }, -- 终端窗口 (参见 terminal-size-color)
 		Title = { fg = p.bright_green, bold = true }, -- 输出标题 (如 =set all, ":autocmd" 等)
-		Visual = { bg = p.subtext1 }, -- 视觉模式选择
-		VisualNOS = { bg = p.subtext1 }, -- 当 vim 没有 "Not Owning the Selection" 时的视觉模式选择
+		Visual = { bg = p.bright_black }, -- 视觉模式选择
+		VisualNOS = { bg = p.bright_black }, -- 当 vim 没有 "Not Owning the Selection" 时的视觉模式选择
 		WarningMsg = { fg = p.yellow }, -- 警告消息
 		Whitespace = { fg = p.gray2 }, -- 'listchars' 空白字符
 		WildMenu = { fg = p.bg, bg = p.blue }, -- 'wildmenu' 完成中的当前匹配项

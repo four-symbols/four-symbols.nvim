@@ -1,37 +1,38 @@
--- 朱雀象征南方和夏天,代表热情和活力,颜色上以红色和橙色为主,带有一些金色和白色的点缀,以体现其明亮和激情
 return {
-	bg = "#2c1a1a", -- 深红棕色，代表火焰的背景
-	-- fg = "#ffd7ba", -- 浅黄色，提供良好的对比
-	fg = "#ff7d61",
-	subtext1 = "#ffc4a3", -- 淡橙色，用于次要文本
-	subtext2 = "#ffb08d", -- 中橙色，用于次级文本
-	subtext3 = "#ff9777", -- 深橙色，用于更次级的文本
-	-- subtext4 = "#ff7d61", -- 更深的橙红色，用于最次要的文本
-	subtext4 = "#d3b17d", -- 枯黄色，用于最次要的文本
-	bg_dark = "#261616", -- 更深的背景色，增强对比度
-	black = "#331a1a", -- 深黑棕色，用于高对比元素
-	red = "#ff5640", -- 亮红色，象征火焰和热情
-	green = "#7dcfb6", -- 浅绿色，象征生命和自然，对比色
-	yellow = "#ffc85c", -- 亮黄色，提供视觉焦点
-	purple = "#c48cda", -- 浅紫色，增加神秘感和对比
-	magenta = "#ff8ab8", -- 亮紫红色，强调
-	orange = "#ff9440", -- 亮橙色，增加温暖感
-	blue = "#6fb2d2", -- 浅蓝色，冷静和对比
-	cyan = "#7dd9d7", -- 浅青色，冷静和稳定
-	bright_black = "#3a1e1e", -- 较亮的深黑棕色，用于对比
-	bright_red = "#ff6959", -- 更亮的红色，强调火焰和热情
-	bright_green = "#8ee1c9", -- 更亮的绿色，活力和生命
-	bright_yellow = "#ffdd71", -- 更亮的黄色，视觉焦点
-	bright_purple = "#d3a3e5", -- 更亮的紫色，神秘和梦幻
-	bright_magenta = "#ff9ac9", -- 更亮的红紫色，强调
-	bright_orange = "#ffab61", -- 更亮的橙色，温暖和活力
-	bright_blue = "#81c3e3", -- 更亮的蓝色，冷静和对比
-	bright_cyan = "#8ef0ec", -- 更亮的青色，冷静和稳定
-	gray0 = "#3f2121", -- 比较亮的深灰棕色，背景补充
-	gray1 = "#442525", -- 中灰棕色，背景补充
-	gray2 = "#492929", -- 较浅的灰棕色，背景补充
-	gray3 = "#4f2d2d", -- 更浅的灰棕色，背景补充
-	gray4 = "#553131", -- 最浅的灰棕色，背景补充
-	-- Special
+	bg = "#261717",
+	fg = "#e6a398",
+
+	subtext1 = "#d18b75",
+	subtext2 = "#c07560",
+	subtext3 = "#a86654",
+	subtext4 = "#8f5749",
+	bg_dark = "#1b1010",
+
+	black = "#1a0e0e",
+	red = "#d96666",
+	green = "#9dbf9e",
+	yellow = "#e6c28b",
+	purple = "#b58cab",
+	magenta = "#d48eaa",
+	orange = "#e6a07c",
+	blue = "#8fbfbd",
+	cyan = "#89bfb6",
+
+	-- bright_black = "#4a3a3a",
+	-- bright_red = "#e58b8b",
+	-- bright_green = "#a5d6a7",
+	-- bright_yellow = "#f0d8a8",
+	-- bright_purple = "#c6a4c0",
+	-- bright_magenta = "#e0a8b8",
+	-- bright_orange = "#f0b49c",
+	-- bright_blue = "#a8d0d0",
+	-- bright_cyan = "#a0d8cc",
+
+	gray0 = "#5e4e4e",
+	gray1 = "#6c5a5a",
+	gray2 = "#7a6666",
+	gray3 = "#897373",
+	gray4 = "#978080",
+
 	none = "NONE",
 }

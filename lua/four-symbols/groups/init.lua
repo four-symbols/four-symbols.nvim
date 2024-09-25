@@ -25,10 +25,6 @@ local Trouble = require "four-symbols.groups.integrations.trouble"
 local M = {}
 
 function M.setup(colors, opts)
-	local groups = {
-		editor = true,
-	}
-
 	local groupsColor = {
 		editor = Editor.get(colors, opts),
 		syntax = Syntax.get(colors, opts),
@@ -57,13 +53,15 @@ function M.setup(colors, opts)
 
 	local result = {}
 
-	for _, subtable in pairs(groupsColor) do
-		for k, v in pairs(subtable) do
-			result[k] = v
+	for group, subtable in pairs(groupsColor) do
+		if opts.plugins[group] then
+			for k, v in pairs(subtable) do
+				result[k] = v
+			end
 		end
 	end
 
-	return result, groups
+	return result
 end
 
 return M

@@ -12,19 +12,19 @@ function M.get(p, opts)
 	return {
 		Comment = { fg = p.gray3, italic = true } + styles.comments, -- 任何注释
 		Constant = { fg = p.yellow }, -- 任何常量
-		String = { fg = p.green }, -- 字符串常量："这是一个字符串"
+		String = { fg = p.blue }, -- 字符串常量："这是一个字符串"
 		Character = { fg = p.orange }, -- 字符常量：'p'，'\n'
 		Number = { fg = p.orange }, -- 数字常量：234，0xff
 		Boolean = { fg = p.orange } + styles.booleans, -- 布尔常量：TRUE，false
 		Float = { fg = p.orange }, -- 浮点常量：2.3e10
 		Identifier = { fg = p.subtext1 } + styles.identifiers, -- 任何变量名
 		Function = { fg = p.blue } + styles.functions, -- 函数名（也包括类的方法）
-		Statement = { fg = p.magenta }, -- 任何语句
+		Statement = { fg = p.magenta, italic = true }, -- 任何语句
 		Conditional = { fg = p.magenta }, -- if，then，else，endif，switch 等
 		Repeat = { fg = p.magenta }, -- for，do，while 等
 		Label = { fg = p.red }, -- case，default 等
 		Operator = { fg = p.subtext3 }, -- "sizeof"，"+"，"*" 等
-		Keyword = { fg = p.purple } + styles.keywords, -- 任何其他关键字
+		Keyword = { fg = p.purple, italic = true } + styles.keywords, -- 任何其他关键字 if for in
 		Exception = { fg = p.red }, -- try，catch，throw
 		PreProc = { fg = p.yellow }, -- 通用预处理器
 		Include = { fg = p.purple }, -- 预处理器 #include
@@ -70,8 +70,8 @@ function M.get(p, opts)
 		MatchParen = { fg = p.bright_cyan, bold = true }, -- 匹配的括号
 		NonText = { fg = p.gray2 }, -- '~' 和 '@' 在行尾，以及其他在 'showbreak' 中使用的字符
 		SpecialKey = { fg = p.gray3 }, -- 由 'listchars' 显示的文本
-		Visual = { bg = p.gray1 }, -- 可视模式选择
-		VisualNOS = { bg = p.gray1 }, -- 可视模式选择（无所有者）
+		Visual = { bg = p.gray4 }, -- 可视模式选择
+		VisualNOS = { bg = p.gray4 }, -- 可视模式选择（无所有者）
 		Search = { fg = p.bg_dark, bg = p.bright_yellow }, -- 最后搜索的模式
 		IncSearch = { fg = p.bg_dark, bg = p.bright_orange }, -- 'incsearch' 高亮；也用于被替换的文本
 		CursorLine = { bg = p.bg_dark }, -- 光标所在屏幕行的高亮
