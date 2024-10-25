@@ -24,7 +24,7 @@
 
 The **Four Symbols** theme series is inspired by the Four Symbols in ancient Chinese mythology. Each theme combines the colors and symbolism of its corresponding mythical creature:
 
-- **Azure Dragon**: Symbolizes the East and spring, representing vitality and growth. The theme features colors primarily in green, cyan, and blue hues.
+- **Azure Dragon**: Symbolizes the East and spring, representing vitality and growth. The theme features colors primarily in wood, cyan, and blue hues.
 - **White Tiger**: Symbolizes the West and autumn, representing strength and majesty. The theme features colors primarily in white, gray, and metallic hues.
 - **Vermilion Bird**: Symbolizes the South and summer, representing passion and energy. The theme features colors primarily in red, orange, and gold hues.
 - **Black Tortoise**: Symbolizes the North and winter, representing stability and wisdom. The theme features colors primarily in black, deep blue, and cyan hues.
@@ -63,7 +63,6 @@ After installation, add the following to your Neovim configuration file:
 require('four-symbols').setup({
   theme = 'azure_dragon',  -- Options: 'azure_dragon', 'white_tiger', 'vermilion_bird', 'black_tortoise'
   transparent = false,     -- Enable transparent background
-  dim_inactive = false,    -- Dim inactive window backgrounds
   -- Other optional configurations
 })
 
@@ -97,7 +96,6 @@ You can pass the following optional configurations in the `setup` function:
 require('four-symbols').setup({
   theme = 'azure_dragon',  -- Choose theme
   transparent = false,     -- Enable transparent background
-  dim_inactive = false,    -- Dim inactive window backgrounds
   styles = {
     comments = { italic = true },      -- Style for comments
     keywords = { bold = true },        -- Style for keywords
@@ -116,4 +114,3 @@ require('four-symbols').setup({
 ---
 
 _Note: In the above README, please replace `your_username` with your actual GitHub username._
-

@@ -2,8 +2,8 @@ local M = {}
 
 function M.get(p)
 	return {
-		GitSignsAdd = { fg = p.green },
-		GitSignsChange = { fg = p.yellow },
+		GitSignsAdd = { fg = p.wood },
+		GitSignsChange = { fg = p.metal },
 		GitSignsDelete = { fg = p.red },
 	}
 end

@@ -3,7 +3,7 @@ local M = {}
 M.version = "1.0.0" -- x-release-please-version
 
 M.defaults = {
-	theme = "white-tiger", -- The theme comes in three styles, `storm`, a darker variant `night` and `day`
+	theme = "azure-dragon", -- The theme comes in three styles, `storm`, a darker variant `night` and `day`
 	transparent = false, -- Enable this to disable setting the background color
 	terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
 	styles = {
@@ -14,14 +14,6 @@ M.defaults = {
 		variables = {},
 		booleans = {},
 	},
-	dim_inactive = false, -- dims inactive windows
-	lualine_bold = false, -- When `true`, section headers in the lualine theme will be bold
-
-	on_colors = function(colors) end,
-	on_highlights = function(highlights, colors) end,
-
-	cache = true, -- When set to true, the theme will be cached for better performance
-
 	plugins = {
 		editor = true,
 		syntax = true,
@@ -46,6 +38,7 @@ M.defaults = {
 		telescope = true,
 		treesitter = true,
 		trouble = true,
+		dashboard = true,
 	},
 }
 

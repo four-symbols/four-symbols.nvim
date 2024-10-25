@@ -2,7 +2,7 @@ local M = {}
 
 function M.get(p)
 	return {
-		LazyDimmed = { fg = p.subtext2 },
+		LazyDimmed = { fg = p.fg_hint },
 	}
 end
 

@@ -3,8 +3,6 @@ local terminal = require "four-symbols.terminal"
 local M = {}
 
 function M.setup(opts)
-	opts = require("four-symbols.config").extend(opts)
-
 	local colors = require("four-symbols.palette").setup(opts)
 
 	local groups = require("four-symbols.groups").setup(colors, opts)
@@ -13,7 +11,7 @@ function M.setup(opts)
 		vim.api.nvim_set_hl(0, group, hl)
 	end
 
-	if opts.terminal_colors then terminal.setup() end
+	if opts.terminal_colors then terminal.setup(colors) end
 
 	return colors, groups, opts
 end

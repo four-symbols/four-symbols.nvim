@@ -2,11 +2,11 @@ local M = {}
 
 function M.get(p)
 	return {
-		FlashLabel = { fg = p.bright_green, bg = p.bg, bold = true },
-		FlashBackdrop = { fg = p.subtext4 },
-		FlashMatch = { fg = p.bright_purple, bg = p.bg },
-		FlashCurrent = { fg = p.bright_cyan, bg = p.bg },
-		FlashPrompt = { bg = p.bg_dark },
+		FlashLabel = { fg = p.wood, bg = p.bg, bold = true },
+		FlashBackdrop = { fg = p.fg_secondary },
+		FlashMatch = { fg = p.purple, bg = p.bg },
+		FlashCurrent = { fg = p.cyan, bg = p.bg },
+		FlashPrompt = { bg = p.bg_secondary },
 	}
 end
 

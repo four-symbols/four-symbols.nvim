@@ -2,8 +2,8 @@ local M = {}
 
 function M.get(p)
 	return {
-		IblIndent = { fg = p.gray2 },
-		IblScope = { fg = p.gray3 },
+		IblIndent = { fg = p.gray },
+		IblScope = { fg = p.gray },
 	}
 end
 

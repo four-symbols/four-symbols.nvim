@@ -1,6 +1,8 @@
 local M = {}
 
 function M.load(opts)
+	opts = require("four-symbols.config").extend(opts)
+
 	vim.cmd "hi clear"
 	if vim.fn.exists "syntax_on" then vim.cmd "syntax reset" end
 	vim.o.background = "dark"
