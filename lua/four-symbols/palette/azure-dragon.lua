@@ -2,9 +2,9 @@ return {
 	bg = "#0f1215",
 	fg = "#009B8C",
 
+	bg_muted = "#505a60",
 	bg_secondary = "#212525",
 	bg_hint = "#2e383c",
-	bg_muted = "#505a60",
 	bg_bright = "#b4d4ad",
 
 	fg_muted = "#568a8a",

@@ -17,8 +17,8 @@ function M.get(p, opts)
 
 		EndOfBuffer = { fg = p.bg }, -- 缓冲区末尾
 		ErrorMsg = { fg = p.red, bg = p.bg_secondary }, -- 命令行中的错误消息
-		VertSplit = { fg = p.gray }, -- 垂直分割窗口的列
-		WinSeparator = { fg = p.gray }, -- 垂直分割窗口的列
+		VertSplit = { fg = p.bg_secondary }, -- 垂直分割窗口的列
+		WinSeparator = { fg = p.bg_secondary }, -- 垂直分割窗口的列
 		Folded = { fg = p.gray, bg = p.bg_secondary }, -- 折叠关闭时的行
 		FoldColumn = { bg = p.bg, fg = p.fg_secondary }, -- 显示折叠的列
 		SignColumn = { bg = p.bg, fg = p.fg_secondary }, -- 显示标志的列
