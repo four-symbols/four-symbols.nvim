@@ -6,6 +6,7 @@ console.log(useEffect);
 
 export const A = "123";
 export let B = "456";
+export const ABC = "789";
 
 function add(a, b) {
   console.log("Adding:", a, b);
