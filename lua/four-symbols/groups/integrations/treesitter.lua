@@ -9,11 +9,11 @@ function M.get(p, opts)
 
 	return {
 		-- 布尔值，如 true、false
-		["@boolean"] = { fg = p.fire } + styles.booleans,
+		["@boolean"] = { fg = p.orange } + styles.booleans,
 		-- 构造函数，类的构造方法或函数
 		["@constructor"] = { fg = p.caption },
 		-- 内建常量，如 nil、true、false 等
-		["@constant.builtin"] = { fg = p.metal },
+		["@constant.builtin"] = { fg = p.yellow },
 		-- 函数定义关键字，如 function、def 等
 		["@keyword.function"] = { fg = p.purple } + styles.functions,
 		-- 命名空间，模块或包名
@@ -31,13 +31,13 @@ function M.get(p, opts)
 		-- 特殊的标点符号
 		["@punctuation.special"] = { fg = p.caption },
 		-- 文档字符串，通常用于注释
-		["@string.documentation"] = { fg = p.wood } + styles.comments,
+		["@string.documentation"] = { fg = p.green } + styles.comments,
 		-- 正则表达式字符串
 		["@string.regex"] = { fg = p.purple },
 		-- 字符串中的转义字符
 		["@string.escape"] = { fg = p.magenta },
 		-- 符号类型，特定语言中的符号
-		["@symbol"] = { fg = p.metal },
+		["@symbol"] = { fg = p.yellow },
 		-- 标签，如 HTML 标签
 		["@tag"] = { fg = p.red },
 		-- 标签的属性名
@@ -69,27 +69,27 @@ function M.get(p, opts)
 		-- 标题通用样式
 		["@markup.heading"] = { fg = p.fg, bold = true },
 		-- 一级标题
-		["@markup.heading.1"] = { fg = p.water, bold = true },
+		["@markup.heading.1"] = { fg = p.blue, bold = true },
 		-- 一级标题的标记（如 '#'）
 		["@markup.heading.1.marker"] = { link = "@comment" },
 		-- 二级标题
-		["@markup.heading.2"] = { fg = p.water, bold = true },
+		["@markup.heading.2"] = { fg = p.blue, bold = true },
 		-- 二级标题的标记
 		["@markup.heading.2.marker"] = { link = "@comment" },
 		-- 三级标题
-		["@markup.heading.3"] = { fg = p.water, bold = true },
+		["@markup.heading.3"] = { fg = p.blue, bold = true },
 		-- 三级标题的标记
 		["@markup.heading.3.marker"] = { link = "@comment" },
 		-- 四级标题
-		["@markup.heading.4"] = { fg = p.water, bold = true },
+		["@markup.heading.4"] = { fg = p.blue, bold = true },
 		-- 四级标题的标记
 		["@markup.heading.4.marker"] = { link = "@comment" },
 		-- 五级标题
-		["@markup.heading.5"] = { fg = p.water, bold = true },
+		["@markup.heading.5"] = { fg = p.blue, bold = true },
 		-- 五级标题的标记
 		["@markup.heading.5.marker"] = { link = "@comment" },
 		-- 六级标题
-		["@markup.heading.6"] = { fg = p.water, bold = true },
+		["@markup.heading.6"] = { fg = p.blue, bold = true },
 		-- 六级标题的标记
 		["@markup.heading.6.marker"] = { link = "@comment" },
 		-- 链接文本
@@ -109,11 +109,11 @@ function M.get(p, opts)
 		-- 原始块的分隔符（如 ```）
 		["@markup.raw.delimiter"] = { fg = p.purple, bg = p.bg_secondary },
 		-- code
-		["@markup.raw.markdown_inline"] = { fg = p.wood, bold = true },
+		["@markup.raw.markdown_inline"] = { fg = p.green, bold = true },
 		-- 引用文本
 		["@markup.quote"] = { fg = p.caption },
 		-- Markdown 中已完成的列表项
-		["@markup.list.checked.markdown"] = { fg = p.wood },
+		["@markup.list.checked.markdown"] = { fg = p.green },
 		-- 下划线文本（链接到 "@text.underline"）
 		["@markup.underline"] = { link = "@text.underline" },
 		-- 加粗文本（链接到 "@text.strong"）
@@ -122,7 +122,6 @@ function M.get(p, opts)
 		["@markup.italic"] = { link = "@text.italic" },
 		-- 删除线文本（链接到 "@text.strikethrough"）
 		["@markup.strikethrough"] = { link = "@text.strikethrough" },
-
 		-- Lua
 		["@variable.lua"] = { fg = p.red },
 	}

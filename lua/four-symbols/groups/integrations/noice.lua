@@ -2,9 +2,9 @@ local M = {}
 
 function M.get(p)
 	return {
-		NoiceCmdlinePopup = { bg = p.bg_secondary },
-		NoiceCmdlinePopupBorder = { fg = p.water, italic = true },
-		NoiceCmdlineIcon = { fg = p.water },
+		NoiceCmdlinePopup = { bg = p.bg_muted },
+		NoiceCmdlinePopupBorder = { fg = p.fg_caption, italic = true },
+		NoiceCmdlineIcon = { fg = p.fg_caption },
 	}
 end
 

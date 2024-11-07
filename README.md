@@ -24,7 +24,7 @@
 
 The **Four Symbols** theme series is inspired by the Four Symbols in ancient Chinese mythology. Each theme combines the colors and symbolism of its corresponding mythical creature:
 
-- **Azure Dragon**: Symbolizes the East and spring, representing vitality and growth. The theme features colors primarily in wood, cyan, and blue hues.
+- **Azure Dragon**: Symbolizes the East and spring, representing vitality and growth. The theme features colors primarily in green, cyan, and blue hues.
 - **White Tiger**: Symbolizes the West and autumn, representing strength and majesty. The theme features colors primarily in white, gray, and metallic hues.
 - **Vermilion Bird**: Symbolizes the South and summer, representing passion and energy. The theme features colors primarily in red, orange, and gold hues.
 - **Black Tortoise**: Symbolizes the North and winter, representing stability and wisdom. The theme features colors primarily in black, deep blue, and cyan hues.

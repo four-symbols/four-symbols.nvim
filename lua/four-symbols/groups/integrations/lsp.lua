@@ -18,7 +18,7 @@ function M.get(p)
 		-- 格式说明符，如 %d、%s 等
 		["@lsp.type.formatSpecifier"] = { link = "@punctuation.special" },
 		-- 接口类型
-		["@lsp.type.interface"] = { fg = p.purple },
+		["@lsp.type.interface"] = { fg = p.orange },
 		-- 关键字，如 if、else、for 等
 		["@lsp.type.keyword"] = { link = "@keyword" },
 		-- 命名空间、包或模块
@@ -42,7 +42,7 @@ function M.get(p)
 		-- 只读修饰符
 		["@lsp.mod.readonly"] = { link = "@constant" },
 		-- 只读的函数
-		["@lsp.typemod.function.readonly"] = { fg = p.water },
+		["@lsp.typemod.function.readonly"] = { fg = p.blue },
 		-- 变量声明
 		["@lsp.typemod.variable.declaration"] = { link = "@variable" },
 		-- 默认库中的类
@@ -78,27 +78,7 @@ function M.get(p)
 		-- 高亮当前引用的读操作（如变量被读取）
 		LspReferenceRead = { fg = p.purple, underline = false, bold = true },
 		-- LSP 签名中的活动参数（在函数调用时高亮当前参数）
-		LspSignatureActiveParameter = { fg = p.metal, bold = true },
-
-		-- 诊断信息（Diagnostics）
-		-- 表示正常状态或成功
-		DiagnosticOk = { fg = p.wood },
-		-- 错误信息
-		DiagnosticError = { fg = p.red },
-		-- 警告信息
-		DiagnosticWarn = { fg = p.metal },
-		-- 提示信息
-		DiagnosticInfo = { fg = p.purple },
-		-- 建议信息
-		DiagnosticHint = { fg = p.cyan },
-		-- 错误下划线
-		DiagnosticUnderlineError = { fg = p.red, underline = true },
-		-- 警告下划线
-		DiagnosticUnderlineWarn = { fg = p.metal, underline = true },
-		-- 信息下划线
-		DiagnosticUnderlineInfo = { fg = p.purple, underline = true },
-		-- 提示下划线
-		DiagnosticUnderlineHint = { fg = p.cyan, underline = true },
+		LspSignatureActiveParameter = { fg = p.yellow, bold = true },
 	}
 end
 

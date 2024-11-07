@@ -5,10 +5,10 @@ function M.get(p)
 		NeoTreeFloatBorder = { fg = p.gray, bg = p.bg },
 		NeoTreeFloatTitle = { fg = p.fg_secondary, bg = p.bg },
 		NeoTreeTitleBar = { fg = p.fg, bg = p.bg_muted },
-		NeoTreeGitAdded = { fg = p.water, bg = p.red },
+		NeoTreeGitAdded = { fg = p.blue, bg = p.red },
 		NeoTreeGitConflict = { fg = p.red },
 		NeoTreeGitDeleted = { fg = p.red },
-		NeoTreeGitModified = { fg = p.wood },
+		NeoTreeGitModified = { fg = p.green },
 
 		NeoTreeDimText = {
 			fg = p.bg_secondary,
@@ -17,7 +17,7 @@ function M.get(p)
 			fg = p.fg,
 		},
 		NeoTreeGitStaged = {
-			fg = p.earth,
+			fg = p.brown,
 		},
 		NeoTreeGitUntracked = {
 			fg = p.purple,

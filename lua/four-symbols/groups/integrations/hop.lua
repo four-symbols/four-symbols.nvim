@@ -2,7 +2,7 @@ local M = {}
 
 function M.get(p)
 	return {
-		HopNextKey = { fg = p.metal },
+		HopNextKey = { fg = p.yellow },
 		HopNextKey1 = { fg = p.purple },
 		HopNextKey2 = { fg = p.red },
 		HopUnmatched = { fg = p.gray },

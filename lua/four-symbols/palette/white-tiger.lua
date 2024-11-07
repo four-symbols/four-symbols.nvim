@@ -1,28 +1,25 @@
 return {
 	bg = "#fffbf0",
+	bg_muted = "#f0eee7",
+	bg_caption = "#e1dccf",
+	bg_secondary = "#d1cbb8",
+	bg_bright = "#ffffff",
 	fg = "#333333",
-
-	bg_secondary = "#f3f9f1",
-	bg_hint = "#d7d7d5",
-
-	fg_muted = "#808080",
-	fg_secondary = "#999999",
-	fg_hint = "#666666",
-	fg_caption = "#4F4F4F",
-
-	metal = "#b07f0c",
-	wood = "#549688",
-	water = "#165e83",
-	fire = "#FF6600",
-	earth = "#6b6882",
-
+	fg_muted = "#666666",
+	fg_caption = "#4d4d4d",
+	fg_secondary = "#1a1a1a",
+	fg_bright = "#000000",
+	yellow = "#c89216",
+	green = "#549688",
+	blue = "#1457d7",
+	orange = "#FF6600",
+	brown = "#8b7b64",
 	white = "#ffffff",
-	black = "#392f41",
+	black = "#333333",
 	red = "#cc0000",
 	purple = "#674196",
 	magenta = "#e7609e",
-	cyan = "#43676b",
+	cyan = "#5a8a99",
 	gray = "#a1afc9",
-
 	none = "NONE",
 }

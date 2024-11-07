@@ -3,7 +3,7 @@ local M = {}
 function M.get(p)
 	return {
 		MiniFilesBorder = { link = "FloatBorder" },
-		MiniFilesBorderModified = { fg = p.water },
+		MiniFilesBorderModified = { fg = p.blue },
 		MiniFilesCursorLine = { link = "CursorLine" },
 		MiniFilesDirectory = { link = "Directory" },
 		MiniFilesFile = { fg = p.fg },
