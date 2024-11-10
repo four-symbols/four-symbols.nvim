@@ -1,116 +1,112 @@
 <p align="center">
-  <!-- Logo Placeholder -->
+  <img src="./images/logo.jpg" alt="Four Symbols" width="200" />
 </p>
 
 # Four Symbols Neovim Theme
 
-**Four Symbols** is a collection of Neovim themes inspired by the four mythical creatures from ancient Chinese mythology: Azure Dragon, White Tiger, Vermilion Bird, and Black Tortoise. Each theme represents a direction, season, and element, aiming to bring a unique visual experience to your editor.
+**Four Symbols** is a series of Neovim themes inspired by the four legendary beasts from ancient Chinese mythology: Azure Dragon, White Tiger, Vermilion Bird, and Black Tortoise. Each theme represents a season and an element, aiming to bring a unique visual experience to the editor.
 
-## Table of Contents
+- **Azure Dragon (青龙)**: Represents the East and Spring, symbolizing vitality and growth. The theme features green, cyan, and bright colors.
+- **White Tiger (白虎)**: Represents the West and Autumn, symbolizing strength and majesty. The theme features white and gray.
+- **Vermilion Bird (朱雀)**: Represents the South and Summer, symbolizing passion and energy. The theme features red and orange colors.
+- **Black Tortoise (玄武)**: Represents the North and Winter, symbolizing stability and cold. The theme features black and blue.
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Theme Preview](#theme-preview)
-  - [Azure Dragon](#azure-dragon)
-  - [White Tiger](#white-tiger)
-  - [Vermilion Bird](#vermilion-bird)
-  - [Black Tortoise](#black-tortoise)
-- [Configuration Options](#configuration-options)
-- [Acknowledgements](#acknowledgements)
-
-## Introduction
-
-The **Four Symbols** theme series is inspired by the Four Symbols in ancient Chinese mythology. Each theme combines the colors and symbolism of its corresponding mythical creature:
-
-- **Azure Dragon**: Symbolizes the East and spring, representing vitality and growth. The theme features colors primarily in green, cyan, and blue hues.
-- **White Tiger**: Symbolizes the West and autumn, representing strength and majesty. The theme features colors primarily in white, gray, and metallic hues.
-- **Vermilion Bird**: Symbolizes the South and summer, representing passion and energy. The theme features colors primarily in red, orange, and gold hues.
-- **Black Tortoise**: Symbolizes the North and winter, representing stability and wisdom. The theme features colors primarily in black, deep blue, and cyan hues.
+> [!CAUTION]
+> This theme is currently in an unstable state. The color choices are largely based on my subjective preferences, and there may be significant changes in the future.
 
 ## Features
 
-- **Multiple Theme Choices**: Switch between different theme styles according to your preference and mood.
-- **Highly Customizable**: Supports various configuration options to meet personalized needs.
-- **Extensive Plugin Support**: Compatible with mainstream Neovim plugins like Treesitter, LSP, and more.
-- **Carefully Designed Color Schemes**: Each theme is finely tuned to ensure good readability and aesthetics.
+- **Multiple Theme Options**: Switch between different theme styles based on preference and mood.
+- **Highly Customizable**: Offers various configuration options to meet personalization needs.
+- **Extensive Plugin Support**: Compatible with major Neovim plugins (e.g., Treesitter, LSP).
+- **Carefully Crafted Color Schemes**: Each theme's colors are finely tuned to ensure readability and aesthetics.
 
-## Installation
+## 📷 Preview
 
-### Using a Plugin Manager
+### Azure Dragon - 青龙
 
-It's recommended to use a plugin manager like [packer.nvim](https://github.com/wbthomason/packer.nvim) or [vim-plug](https://github.com/junegunn/vim-plug) for installation.
+![Azure Dragon](./images/azure-dragon.png)
 
-#### Using packer.nvim
+### White Tiger - 白虎
 
-```lua
-use 'your_username/four-symbols.nvim'
-```
+![White Tiger](./images/white-tiger.png)
 
-#### Using vim-plug
+### Vermilion Bird - 朱雀
 
-```vim
-Plug 'your_username/four-symbols.nvim'
-```
+![Vermilion Bird](./images/vermilion-bird.png)
 
-## Usage
+### Black Tortoise - 玄武
 
-After installation, add the following to your Neovim configuration file:
+![Black Tortoise](./images/black-tortoise.png)
 
-```lua
--- Choose your preferred theme
-require('four-symbols').setup({
-  theme = 'azure_dragon',  -- Options: 'azure_dragon', 'white_tiger', 'vermilion_bird', 'black_tortoise'
-  transparent = false,     -- Enable transparent background
-  -- Other optional configurations
-})
+## 🎨 Palette
 
--- Apply the theme
-vim.cmd('colorscheme four-symbols')
-```
+![Azure Dragon Palette](./images/azure-dragon-palette.png)
+![White Tiger Palette](./images/white-tiger-palette.png)
+![Vermilion Bird Palette](./images/vermilion-bird-palette.png)
+![Black Tortoise Palette](./images/black-tortoise-palette.png)
 
-## Theme Preview
+## 📦 Installation
 
-### Azure Dragon
-
-_(Add screenshots or color scheme examples of the Azure Dragon theme here)_
-
-### White Tiger
-
-_(Add screenshots or color scheme examples of the White Tiger theme here)_
-
-### Vermilion Bird
-
-_(Add screenshots or color scheme examples of the Vermilion Bird theme here)_
-
-### Black Tortoise
-
-_(Add screenshots or color scheme examples of the Black Tortoise theme here)_
-
-## Configuration Options
-
-You can pass the following optional configurations in the `setup` function:
+### Using Lazy.vim
 
 ```lua
-require('four-symbols').setup({
-  theme = 'azure_dragon',  -- Choose theme
-  transparent = false,     -- Enable transparent background
+{
+	"four-symbols/four-symbols.nvim",
+	lazy = false,
+	priority = 1000
+}
+```
+
+## ⚙️ Configuration
+
+```lua
+opts = {
+  theme = "", -- default azure-dragon, options: vermilion-bird、white-tiger、black-tortoise
+  transparent = false,
+  dim_inactive = true,
+  terminal_colors = true,
   styles = {
-    comments = { italic = true },      -- Style for comments
-    keywords = { bold = true },        -- Style for keywords
-    functions = { italic = true },     -- Style for function names
-    variables = {},                    -- Style for variables
+    comments = {},
+    keywords = {},
+    identifiers = {},
+    functions = {},
+    variables = {},
+    booleans = {},
   },
-  -- More configuration options
-})
+  plugins = {
+    editor = true,
+    syntax = true,
+    alpha = true,
+    cmp = true,
+    flash = true,
+    gitsigns = true,
+    hop = true,
+    illuminate = true,
+    indent_blankline = true,
+    lazy = true,
+    lsp = true,
+    markdown = true,
+    mason = true,
+    mini = true,
+    navic = true,
+    neotree = true,
+    neorg = true,
+    noice = true,
+    notify = true,
+    rainbow_delimiters = true,
+    telescope = true,
+    treesitter = true,
+    trouble = true,
+    dashboard = true,
+  }
+}
+
 ```
 
-## Acknowledgements
+## 🎙️ Acknowledgements
 
-- Thanks to everyone who has provided suggestions and contributions to this project.
-- Special thanks to the Neovim community for their support and assistance.
+- [tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
+- [oldworld.nvim](https://github.com/dgox16/oldworld.nvim)
 
 ---
-
-_Note: In the above README, please replace `your_username` with your actual GitHub username._
