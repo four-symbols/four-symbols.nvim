@@ -17,8 +17,11 @@ function M.get(p, opts)
 
 		EndOfBuffer = { fg = p.bg },
 		ErrorMsg = { fg = p.red, bg = p.bg_secondary },
-		VertSplit = { fg = p.bg_secondary },
-		WinSeparator = { fg = p.bg_secondary },
+
+		-- Split border color example nvim-tree border
+		VertSplit = { fg = p.bg },
+		WinSeparator = { fg = p.bg },
+
 		Folded = { fg = p.gray, bg = p.bg_secondary },
 		FoldColumn = { bg = p.bg, fg = p.fg_secondary },
 		SignColumn = { bg = p.bg, fg = p.fg_secondary },

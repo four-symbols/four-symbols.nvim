@@ -9,40 +9,44 @@ function M.get(theme)
 	local hl = {}
 
 	hl.normal = {
-		a = { bg = colors.fg_bright, fg = colors.bg, gui = "bold" },
-		b = { bg = colors.fg, fg = colors.bg },
+		a = { bg = colors.bg_bright, fg = colors.fg, gui = "bold" },
+		b = { bg = colors.bg_muted, fg = colors.fg },
 		c = { bg = colors.bg, fg = colors.fg },
 	}
 
 	hl.insert = {
-		a = { bg = colors.purple, fg = colors.black, gui = "bold" },
-		b = { bg = colors.magenta, fg = colors.black },
+		a = { bg = colors.blue, fg = colors.black, gui = "bold" },
+		b = { bg = colors.purple, fg = colors.black },
 	}
 
 	hl.command = {
 		a = { bg = colors.yellow, fg = colors.black },
 		b = { bg = colors.orange, fg = colors.black },
+		c = { bg = colors.bg_muted, fg = colors.fg },
 	}
 
 	hl.visual = {
-		a = { bg = colors.fg_caption, fg = colors.bg_caption },
-		b = { bg = colors.fg_muted, fg = colors.bg_muted },
+		a = { bg = colors.bg_caption, fg = colors.fg_caption },
+		b = { bg = colors.bg, fg = colors.fg_muted },
+		c = { bg = colors.bg_muted, fg = colors.fg },
 	}
 
 	hl.replace = {
 		a = { bg = colors.yellow, fg = colors.black },
-		b = { bg = colors.bg_muted, fg = colors.yellow },
+		b = { bg = colors.orange, fg = colors.yellow },
+		c = { bg = colors.bg_muted, fg = colors.fg },
 	}
 
 	hl.terminal = {
 		a = { bg = colors.blue, fg = colors.black },
-		b = { bg = colors.fg_muted, fg = colors.bg_mutted },
+		b = { bg = colors.bg_muted, fg = colors.bg_mutted },
+		c = { bg = colors.bg_muted, fg = colors.fg },
 	}
 
 	hl.inactive = {
-		a = { bg = colors.fg_bright, fg = colors.bg },
-		b = { bg = colors.fg_bright, fg = colors.bg, gui = "bold" },
-		c = { bg = colors.fg_bright, fg = colors.bg },
+		a = { bg = colors.bg_bright, fg = colors.fg },
+		b = { bg = colors.bg_bright, fg = colors.fg, gui = "bold" },
+		c = { bg = colors.bg_bright, fg = colors.fg },
 	}
 	return hl
 end
