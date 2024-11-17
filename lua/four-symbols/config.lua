@@ -39,6 +39,7 @@ M.defaults = {
 		treesitter = true,
 		trouble = true,
 		dashboard = true,
+		render_markdown = true,
 	},
 }
 

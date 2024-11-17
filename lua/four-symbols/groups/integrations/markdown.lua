@@ -22,9 +22,9 @@ function M.get(p)
 		markdownBlockquote = { fg = p.fg },
 		markdownBold = { fg = p.fg, bg = p.none, bold = true },
 		markdownItalic = { fg = p.fg, bg = p.none, italic = true },
-		markdownCode = { fg = p.yellow },
-		markdownCodeBlock = { fg = p.yellow },
-		markdownCodeDelimiter = { fg = p.fg_secondary },
+		markdownCode = { fg = p.bg, bg = p.bg_muted },
+		markdownCodeBlock = { fg = p.fg_secondary, bg = p.bg_muted },
+		markdownCodeDelimiter = { fg = p.fg_secondary, bg = p.bg_muted },
 	}
 end
 
