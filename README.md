@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./images/logo.jpg" alt="Four Symbols" width="200" />
+  <img src="https://raw.githubusercontent.com/four-symbols/four-symbols-theme/main/assets/logo/logo.png" alt="Four Symbols" width="200" />
 </p>
 
 # Four Symbols Neovim Theme
@@ -24,27 +24,26 @@
 ## 📷 Preview
 
 ### Azure Dragon - 青龙
-
 ![Azure Dragon](./images/azure-dragon.png)
+---
+![Azure Dragon Palette](https://raw.githubusercontent.com/four-symbols/four-symbols-theme/main/assets/palette/azure-dragon-palette.png)
 
 ### White Tiger - 白虎
 
 ![White Tiger](./images/white-tiger.png)
-
+---
+![White Tiger Palette](https://raw.githubusercontent.com/four-symbols/four-symbols-theme/main/assets/palette/white-tiger-palette.png)
 ### Vermilion Bird - 朱雀
 
 ![Vermilion Bird](./images/vermilion-bird.png)
+---
+![Vermilion Bird Palette](https://raw.githubusercontent.com/four-symbols/four-symbols-theme/main/assets/palette/vermilion-bird-palette.png)
 
 ### Black Tortoise - 玄武
 
 ![Black Tortoise](./images/black-tortoise.png)
-
-## 🎨 Palette
-
-![Azure Dragon Palette](./images/azure-dragon-palette.png)
-![White Tiger Palette](./images/white-tiger-palette.png)
-![Vermilion Bird Palette](./images/vermilion-bird-palette.png)
-![Black Tortoise Palette](./images/black-tortoise-palette.png)
+---
+![Black Tortoise Palette](https://raw.githubusercontent.com/four-symbols/four-symbols-theme/main/assets/palette/black-tortoise-palette.png)
 
 ## 📦 Installation
 
