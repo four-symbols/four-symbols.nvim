@@ -1,10 +1,11 @@
 -- 黑色、蓝色、冷色调、低对比度
 return {
-	bg = "#0d1a25",
-	bg_muted = "#17232d",
-	bg_caption = "#24333f",
-	bg_secondary = "#354752",
-	bg_bright = "#4a5e6f",
+	bg = "#0B1115",
+	bg_muted = "#13191E",
+	bg_caption = "#1B232A",
+	bg_secondary = "#252E36",
+	bg_bright = "#303B44",
+
 	fg = "#9cb2d1",
 	fg_muted = "#8699b0",
 	fg_caption = "#93aac3",
