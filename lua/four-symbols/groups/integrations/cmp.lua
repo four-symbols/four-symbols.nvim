@@ -4,19 +4,19 @@ function M.get(p, opts)
 	return {
 		-- PmenuSel = { bg = "", fg = "" },
 		-- Pmenu = { fg = "", bg = "" },
-		CmpBorder = { fg = p.fg_secondary },
+		CmpBorder = { fg = p.fg_04 },
 		CmpItemAbbrDeprecated = { fg = p.gray, bg = "NONE", strikethrough = true },
 		CmpItemAbbrMatch = { fg = p.blue, bg = "NONE", bold = true },
 		CmpItemAbbrMatchFuzzy = { fg = p.blue, bg = "NONE", bold = true },
 		CmpItemMenu = { fg = p.magenta, bg = "NONE", italic = true },
 
-		CmpItemKindField = { fg = p.bg_secondary, bg = p.fg_secondary },
-		CmpItemKindProperty = { fg = p.bg_secondary, bg = p.fg_secondary },
-		CmpItemKindEvent = { fg = p.bg_secondary, bg = p.fg_secondary },
+		CmpItemKindField = { fg = p.bg_04, bg = p.fg_04 },
+		CmpItemKindProperty = { fg = p.bg_04, bg = p.fg_04 },
+		CmpItemKindEvent = { fg = p.bg_04, bg = p.fg_04 },
 
-		CmpItemKindText = { fg = p.bg_muted, bg = p.green },
-		CmpItemKindEnum = { fg = p.bg_muted, bg = p.green },
-		CmpItemKindKeyword = { fg = p.bg_muted, bg = p.green },
+		CmpItemKindText = { fg = p.bg_02, bg = p.green },
+		CmpItemKindEnum = { fg = p.bg_02, bg = p.green },
+		CmpItemKindKeyword = { fg = p.bg_02, bg = p.green },
 
 		CmpItemKindConstant = { fg = p.yellow, bg = p.gray },
 		CmpItemKindConstructor = { fg = p.yellow, bg = p.gray },
@@ -39,9 +39,9 @@ function M.get(p, opts)
 		CmpItemKindValue = { fg = p.white, bg = p.magenta },
 		CmpItemKindEnumMember = { fg = p.white, bg = p.magenta },
 
-		CmpItemKindInterface = { fg = p.bg, bg = p.fg },
-		CmpItemKindColor = { fg = p.bg, bg = p.fg },
-		CmpItemKindTypeParameter = { fg = p.bg, bg = p.fg },
+		CmpItemKindInterface = { fg = p.bg_01, bg = p.fg_01 },
+		CmpItemKindColor = { fg = p.bg_01, bg = p.fg_01 },
+		CmpItemKindTypeParameter = { fg = p.bg_01, bg = p.fg_01 },
 	}
 end
 

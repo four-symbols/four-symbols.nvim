@@ -2,8 +2,8 @@ local M = {}
 
 function M.get(p, opts)
 	return {
-		AlphaHeader = { fg = p.blue, bg = p.bg },
-		AlphaFooter = { fg = p.fg_secondary, bg = p.bg, italic = true },
+		AlphaHeader = { fg = p.blue, bg = p.bg_01 },
+		AlphaFooter = { fg = p.fg_04, bg = p.bg_01, italic = true },
 		AlphaShortcut = { fg = p.green, italic = true },
 	}
 end
