@@ -52,7 +52,7 @@ function M.get(p, opts)
 		["@markup.heading.6"] = { fg = p.blue, bold = true },
 		["@markup.heading.6.marker"] = { link = "@comment" },
 		["@markup.link"] = { fg = p.caption },
-		["@markup.link.label"] = { fg = p.red },
+		["@markup.link.label"] = { fg = p.blue, bold = true }, -- line code
 		["@markup.link.url"] = { fg = p.purple },
 		["@markup.list"] = { fg = p.fg_04, bold = true },
 		["@markup.list.checked"] = { fg = p.fg_04 },
@@ -66,6 +66,7 @@ function M.get(p, opts)
 		["@markup.strong"] = { link = "@text.strong" },
 		["@markup.italic"] = { link = "@text.italic" },
 		["@markup.strikethrough"] = { link = "@text.strikethrough" },
+		["@markup.strong.markdown_inline"] = { fg = p.purple, bold = true }, -- strong
 		["@variable.lua"] = { fg = p.red },
 	}
 end
