@@ -8,13 +8,14 @@ function M.get(p, opts)
 	end, opts.styles)
 
 	return {
+		-- base
 		["@boolean"] = { fg = p.orange } + styles.booleans,
 		["@constructor"] = { fg = p.caption },
 		["@constant.builtin"] = { fg = p.yellow },
 		["@keyword.function"] = { fg = p.purple } + styles.functions,
 		["@namespace"] = { fg = p.red, italic = true },
 		["@parameter"] = { fg = p.magenta },
-		-- ["@property"] = { fg = p.fg_01 },
+		["@import.identifier"] = { fg = p.purple },
 		["@property"] = { fg = p.white },
 		["@punctuation"] = { fg = p.caption },
 		["@punctuation.delimiter"] = { fg = p.caption },
@@ -28,7 +29,7 @@ function M.get(p, opts)
 		["@tag.attribute"] = { fg = p.cyan, italic = true },
 		["@tag.delimiter"] = { fg = p.caption },
 		["@type.builtin"] = { fg = p.magenta },
-		["@variable"] = { fg = p.caption } + styles.variables,
+		["@variable"] = { fg = p.white } + styles.variables,
 		["@variable.builtin"] = { fg = p.purple } + styles.variables,
 		["@variable.parameter"] = { fg = p.magenta } + styles.variables,
 		["@constructor.javascript"] = { fg = p.red },
@@ -37,6 +38,8 @@ function M.get(p, opts)
 		["@text.strong"] = { bold = true },
 		["@text.strikethrough"] = { strikethrough = true },
 		["@text.italic"] = { italic = true },
+
+		-- markdown
 		["@spell.markdown"] = { fg = p.white, bg = p.bg_01 },
 		["@markup.heading"] = { fg = p.fg_01, bold = true },
 		["@markup.heading.1"] = { fg = p.blue, bold = true },
@@ -67,6 +70,8 @@ function M.get(p, opts)
 		["@markup.italic"] = { link = "@text.italic" },
 		["@markup.strikethrough"] = { link = "@text.strikethrough" },
 		["@markup.strong.markdown_inline"] = { fg = p.purple, bold = true }, -- strong
+
+		-- lua
 		["@variable.lua"] = { fg = p.red },
 	}
 end

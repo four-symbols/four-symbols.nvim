@@ -43,7 +43,7 @@ function M.setup(colors, opts)
 		mason = Mason.get(colors),
 		mini = Mini.get(colors),
 		navic = Navic.get(colors),
-		neotree = NeoTree.get(colors),
+		neotree = NeoTree.get(colors, opts),
 		neorg = Neorg.get(colors),
 		noice = Noice.get(colors),
 		notify = Notify.get(colors),

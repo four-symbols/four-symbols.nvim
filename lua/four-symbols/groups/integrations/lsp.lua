@@ -2,7 +2,6 @@ local M = {}
 
 function M.get(p)
 	return {
-		-- LSP 语义令牌组（Semantic Token Groups）
 		["@lsp.type.boolean"] = { link = "@boolean" },
 		["@lsp.type.builtinType"] = { link = "@type.builtin" },
 		["@lsp.type.comment"] = { link = "@comment" },

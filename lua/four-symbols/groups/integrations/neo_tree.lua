@@ -1,6 +1,6 @@
 local M = {}
 
-function M.get(p)
+function M.get(p, opts)
 	return {
 		NeoTreeFloatBorder = { fg = p.gray, bg = p.bg_01 },
 		NeoTreeFloatTitle = { fg = p.fg_04, bg = p.bg_01 },
@@ -23,7 +23,7 @@ function M.get(p)
 			fg = p.purple,
 		},
 		NeoTreeNormal = {
-			bg = p.bg_01,
+			bg = opts.transparent and p.none or p.bg_03,
 			fg = p.fg_01,
 		},
 		NeoTreeNormalNC = {
