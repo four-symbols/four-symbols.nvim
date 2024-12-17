@@ -23,6 +23,7 @@ local TreeSitter = require "four-symbols.groups.integrations.treesitter"
 local Trouble = require "four-symbols.groups.integrations.trouble"
 local Dashboard = require "four-symbols.groups.integrations.dashboard"
 local RenderMarkdown = require "four-symbols.groups.integrations.render_markdown"
+local Blink = require "four-symbols.groups.integrations.blink"
 
 local M = {}
 
@@ -52,7 +53,8 @@ function M.setup(colors, opts)
 		treesitter = TreeSitter.get(colors, opts),
 		trouble = Trouble.get(colors),
 		dashboard = Dashboard.get(colors, opts),
-		render_markdown = RenderMarkdown.get(colors, opts),
+		render_markdown = RenderMarkdown.get(colors),
+		blink = Blink.get(colors),
 	}
 
 	local result = {}

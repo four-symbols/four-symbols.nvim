@@ -40,6 +40,7 @@ M.defaults = {
 		trouble = true,
 		dashboard = true,
 		render_markdown = true,
+		blink = true,
 	},
 }
 
